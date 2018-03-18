@@ -1,0 +1,54 @@
+
+
+.large-hero{
+
+    position: relative;
+    &__banner-img{
+        max-width: 100%;
+    }
+    &__banner{
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+    &__banner-title{
+        font-size: 1.1rem;
+        font-weight: 300;
+        color:$mainBlue;
+        margin: 0;
+
+        @include atSmall{
+            font-size: 2rem;
+        }
+
+        @include atMedium{
+            font-size: 3.2rem;
+        }
+        @include atLarge{
+            font-size: 4.8rem;
+        }
+    }
+
+    &__banner-subtitle{
+        font-size: 1.1rem;
+        font-weight: 300;
+        color:$mainBlue;
+        margin: 0;
+
+        @include atSmall{
+            font-size: 2.9rem;
+        }
+    }
+
+    &__banner-desc{
+        color:#fff;
+        font-size: 1.875rem;
+        font-weight: 100;
+        text-shadow: 2px 2px 0 rgba(0,0,0,.1);
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
